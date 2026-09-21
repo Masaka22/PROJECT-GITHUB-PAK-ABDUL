@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tampilan Aplikasi — SchoolRide</title>
+<meta name="description" content="Sembilan tampilan utama aplikasi SchoolRide: splash screen, login, dashboard, rute, jadwal, titik jemput, notifikasi, profil, dan detail rute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .screens-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:52px 32px; }
+  .screens-grid .screen-item{ margin:0 auto; }
+  @media (max-width:1024px){ .screens-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:640px){ .screens-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></span>
+      School<span>Ride</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="fitur.html">Fitur</a></li>
+      <li><a href="cara-kerja.html">Cara Kerja</a></li>
+      <li><a href="tampilan.html" class="active">Tampilan Aplikasi</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="kontak.html" class="btn btn-primary">Download App</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Beranda</a> / Tampilan Aplikasi</div>
+      <span class="kicker">Tampilan aplikasi</span>
+      <h1>Sembilan layar utama, dari membuka aplikasi sampai sampai di sekolah</h1>
+      <p>Setiap layar dirancang agar informasi yang paling dibutuhkan saat itu — jam, posisi bus, atau titik jemput — langsung terlihat tanpa harus mencari.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap screens-grid">
+
+      <!-- 1 Splash -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen" style="background:linear-gradient(180deg,#1B4DE4,#0B1E4A);">
+            <div class="phone-notch"></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:20px;">
+              <div style="width:56px;height:56px;border-radius:16px;background:#FFC93C;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0B1E4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+              </div>
+              <b style="font-family:'Poppins';font-size:0.95rem;">SchoolRide</b>
+              <span style="font-size:0.66rem;color:#AEBEE6;margin-top:6px;">Perjalanan sekolah jadi lebih mudah</span>
+            </div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">1</span>Splash Screen</span>
+      </div>
+
+      <!-- 2 Login -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-body" style="background:#fff;padding-top:26px;">
+              <div class="center mt-8" style="margin-bottom:20px;">
+                <b style="font-family:'Poppins';color:var(--navy);">SchoolRide</b>
+                <div style="font-size:0.62rem;color:var(--slate);">Masuk ke akun kamu</div>
+              </div>
+              <div class="form-field" style="margin-bottom:10px;"><input style="padding:9px 12px;font-size:0.68rem;" placeholder="Email / Username"></div>
+              <div class="form-field" style="margin-bottom:14px;"><input style="padding:9px 12px;font-size:0.68rem;" placeholder="Password" type="password"></div>
+              <div style="background:var(--blue);color:#fff;text-align:center;border-radius:10px;padding:9px;font-size:0.7rem;font-weight:700;">Masuk</div>
+              <div class="center" style="font-size:0.62rem;color:var(--slate);margin-top:10px;">atau <b style="color:var(--blue);">Daftar</b></div>
+            </div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">2</span>Login / Register</span>
+      </div>
+
+      <!-- 3 Home -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-body">
+              <div style="font-size:0.62rem;color:var(--slate);">Selamat pagi,</div>
+              <b style="font-family:'Poppins';font-size:0.85rem;">Dell 👋</b>
+              <div class="phone-card mt-16"><b>Rute Bus 02</b>Berangkat 06:45</div>
+              <div style="display:flex;justify-content:space-around;margin-top:6px;">
+                <span style="font-size:0.6rem;color:var(--navy);">📍 Rute</span>
+                <span style="font-size:0.6rem;color:var(--navy);">📅 Jadwal</span>
+                <span style="font-size:0.6rem;color:var(--navy);">👤 Profil</span>
+              </div>
+            </div>
+            <div class="phone-tabbar"><span class="active">Home</span><span>Rute</span><span>Jadwal</span><span>Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">3</span>Home / Dashboard</span>
+      </div>
+
+      <!-- 4 Rute Peta -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-bar">Rute Bus 02</div>
+            <div class="phone-body" style="padding:0;">
+              <div style="height:120px;background:var(--sky-deep);position:relative;margin:12px;border-radius:10px;">
+                <svg viewBox="0 0 160 100" style="position:absolute;inset:0;"><path d="M15,80 C 40,20 100,20 145,60" stroke="#1B4DE4" stroke-width="2" fill="none" stroke-dasharray="3 4"/><circle cx="15" cy="80" r="4" fill="#1B4DE4"/><circle cx="145" cy="60" r="4" fill="#FFC93C"/></svg>
+              </div>
+              <div style="padding:0 14px;">
+                <div class="phone-row"><span class="pin"></span> Terminal</div>
+                <div class="phone-row"><span class="pin"></span> Pasar</div>
+                <div class="phone-row"><span class="pin"></span> Sekolah</div>
+              </div>
+            </div>
+            <div class="phone-tabbar"><span>Home</span><span class="active">Rute</span><span>Jadwal</span><span>Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">4</span>Rute (Peta)</span>
+      </div>
+
+      <!-- 5 Jadwal -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-bar">Jadwal</div>
+            <div class="phone-body">
+              <span class="phone-pill">Senin</span>
+              <div class="phone-row mt-16"><span class="pin"></span> 06.00 · Bus 01</div>
+              <div class="phone-row"><span class="pin"></span> 06.30 · Bus 02</div>
+              <div class="phone-row"><span class="pin"></span> 15.00 · Bus 01</div>
+              <div class="phone-row"><span class="pin"></span> 15.30 · Bus 02</div>
+            </div>
+            <div class="phone-tabbar"><span>Home</span><span>Rute</span><span class="active">Jadwal</span><span>Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">5</span>Jadwal</span>
+      </div>
+
+      <!-- 6 Titik Jemput -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-bar">Titik Jemput</div>
+            <div class="phone-body">
+              <div style="font-size:0.66rem;color:var(--slate);margin-bottom:8px;">Pilih titik jemput kamu</div>
+              <div class="phone-row"><span class="pin"></span> Terminal</div>
+              <div class="phone-row"><span class="pin"></span> Pasar</div>
+              <div class="phone-row" style="background:var(--sky-deep);border-radius:8px;padding-left:6px;"><span class="pin"></span> Perumahan A</div>
+              <div class="phone-card mt-16"><b>Perumahan A · Bus 02</b>Pertemuan 06:45</div>
+            </div>
+            <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">6</span>Titik Jemput</span>
+      </div>
+
+      <!-- 7 Notifikasi -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-bar">Notifikasi</div>
+            <div class="phone-body">
+              <div class="phone-card"><b>Bus 02 menuju titik jemput</b>06:32</div>
+              <div class="phone-card"><b>Bus 01 terlambat ±10 menit</b>06:50</div>
+              <div class="phone-card"><b>Jadwal berubah untuk Senin</b>—</div>
+              <div class="phone-card"><b>Selamat sampai di sekolah</b>07:05</div>
+            </div>
+            <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">7</span>Notifikasi</span>
+      </div>
+
+      <!-- 8 Profil -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-bar">Profil</div>
+            <div class="phone-body">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+                <div style="width:34px;height:34px;border-radius:50%;background:var(--blue-light);"></div>
+                <div><b style="font-size:0.75rem;">Dell</b><div style="font-size:0.6rem;color:var(--slate);">Kelas XI RPL 1 · No. 123456</div></div>
+              </div>
+              <div class="phone-row"><span class="pin"></span> Data Diri</div>
+              <div class="phone-row"><span class="pin"></span> Bus yang Digunakan</div>
+              <div class="phone-row"><span class="pin"></span> Edit Profil</div>
+              <div class="phone-row" style="color:#E2483D;"><span class="pin" style="background:#E2483D;"></span> Logout</div>
+            </div>
+            <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">8</span>Profil</span>
+      </div>
+
+      <!-- 9 Detail Rute (admin) -->
+      <div class="screen-item">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-bar">Detail Rute Bus 02</div>
+            <div class="phone-body">
+              <div style="display:flex;gap:8px;margin-bottom:10px;">
+                <div class="phone-card" style="flex:1;margin-bottom:0;"><b>5</b>Jumlah Bus</div>
+                <div class="phone-card" style="flex:1;margin-bottom:0;"><b>120</b>Jumlah Siswa</div>
+              </div>
+              <div class="phone-row"><span class="pin"></span> Kelola Bus</div>
+              <div class="phone-row"><span class="pin"></span> Kelola Jadwal</div>
+              <div class="phone-row"><span class="pin"></span> Kelola Rute</div>
+            </div>
+            <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+          </div>
+        </div>
+        <span class="tag"><span class="num">9</span>Detail Rute (Admin)</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight section-sky">
+    <div class="wrap">
+      <div class="cta-band" style="background:var(--navy);">
+        <div>
+          <h2>Sudah kebayang alurnya?</h2>
+          <p>Download SchoolRide dan jelajahi langsung setiap layar di ponsel kamu.</p>
+        </div>
+        <a href="kontak.html" class="btn btn-yellow">Download Sekarang</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></span>School<span>Ride</span></a>
+        <p>Aplikasi transportasi sekolah yang menghubungkan siswa, orang tua, dan sekolah dalam satu rute yang sama.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produk</h4>
+        <ul><li><a href="fitur.html">Fitur</a></li><li><a href="cara-kerja.html">Cara Kerja</a></li><li><a href="tampilan.html">Tampilan Aplikasi</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul><li><a href="tentang.html">Tentang Kami</a></li><li><a href="kontak.html">Kontak</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul><li><a href="mailto:halo@schoolride.id">halo@schoolride.id</a></li><li><a href="tel:+622112345678">(021) 1234-5678</a></li><li><span>Surabaya, Jawa Timur</span></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SchoolRide. Contoh desain untuk keperluan portofolio.</span>
+      <span>Teman perjalanan setiap hari</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

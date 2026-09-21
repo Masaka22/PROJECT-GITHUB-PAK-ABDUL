@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitur — SchoolRide</title>
+<meta name="description" content="Rute & peta langsung, jadwal harian, notifikasi real-time, titik jemput, dan dashboard admin — semua fitur SchoolRide untuk orang tua, siswa, dan sekolah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></span>
+      School<span>Ride</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="fitur.html" class="active">Fitur</a></li>
+      <li><a href="cara-kerja.html">Cara Kerja</a></li>
+      <li><a href="tampilan.html">Tampilan Aplikasi</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="kontak.html" class="btn btn-primary">Download App</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Beranda</a> / Fitur</div>
+      <span class="kicker">Fitur SchoolRide</span>
+      <h1>Semua yang dibutuhkan tiga pihak — dalam satu aplikasi yang sama</h1>
+      <p>Fitur dikelompokkan berdasarkan siapa yang memakainya: orang tua &amp; siswa di lapangan, dan admin sekolah di belakang layar.</p>
+    </div>
+  </section>
+
+  <!-- ROLE TABS -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="role-tabs">
+        <button class="role-tab active" data-role="ortu">Untuk Orang Tua &amp; Siswa</button>
+        <button class="role-tab" data-role="admin">Untuk Admin Sekolah</button>
+      </div>
+
+      <!-- ORTU PANEL -->
+      <div data-role-panel="ortu">
+        <div class="detail-row">
+          <div>
+            <span class="detail-num">Fitur 01</span>
+            <h2>Rute &amp; peta yang bisa dilihat langsung</h2>
+            <p>Setiap rute bus ditampilkan sebagai daftar titik pemberhentian di peta — dari terminal, melewati beberapa perumahan, sampai gerbang sekolah. Status bus (sedang berjalan / belum berangkat) selalu terlihat di bagian atas.</p>
+            <ul>
+              <li><span class="pin"></span> Posisi bus diperbarui selama perjalanan</li>
+              <li><span class="pin"></span> Daftar titik pemberhentian berurutan</li>
+              <li><span class="pin"></span> Nomor bus dan tujuan ditampilkan jelas</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Rute Bus 02</div>
+              <div class="phone-body">
+                <div class="phone-card"><b>Bus sedang berjalan</b>Berangkat 06:45</div>
+                <div class="phone-row"><span class="pin"></span> Terminal</div>
+                <div class="phone-row"><span class="pin"></span> Pasar</div>
+                <div class="phone-row"><span class="pin"></span> Perumahan A</div>
+                <div class="phone-row"><span class="pin"></span> Sekolah</div>
+              </div>
+              <div class="phone-tabbar"><span class="active">Home</span><span>Rute</span><span>Jadwal</span><span>Profil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-row reverse">
+          <div>
+            <span class="detail-num">Fitur 02</span>
+            <h2>Jadwal yang berbeda tiap hari, ditampilkan apa adanya</h2>
+            <p>Jadwal keberangkatan dan kepulangan diatur per hari — Senin bisa berbeda dari Kamis. Saat ada perubahan mendadak, jadwal yang tampil di aplikasi ikut berubah, jadi orang tua tidak berpegang pada info lama.</p>
+            <ul>
+              <li><span class="pin"></span> Filter jadwal per hari (Senin–Jumat)</li>
+              <li><span class="pin"></span> Menampilkan waktu, nomor bus, dan tujuan</li>
+              <li><span class="pin"></span> Perubahan jadwal langsung ter-update</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Jadwal</div>
+              <div class="phone-body">
+                <span class="phone-pill">Senin</span>
+                <div class="phone-card mt-16"><b>06.00 · Bus 01</b>Tujuan Sekolah</div>
+                <div class="phone-card"><b>06.30 · Bus 02</b>Tujuan Sekolah</div>
+                <div class="phone-card"><b>15.30 · Bus 02</b>Tujuan Rumah</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span class="active">Jadwal</span><span>Profil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <div>
+            <span class="detail-num">Fitur 03</span>
+            <h2>Notifikasi di setiap tahap perjalanan</h2>
+            <p>Empat momen penting dikirim otomatis: bus berangkat, mendekati titik jemput, keterlambatan bila terjadi, dan tiba di sekolah. Orang tua tidak perlu membuka aplikasi terus-menerus untuk tahu keadaan terkini.</p>
+            <ul>
+              <li><span class="pin"></span> Pengingat sebelum bus tiba di titik jemput</li>
+              <li><span class="pin"></span> Info keterlambatan beserta estimasi waktu</li>
+              <li><span class="pin"></span> Konfirmasi saat siswa tiba di sekolah</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Notifikasi</div>
+              <div class="phone-body">
+                <div class="phone-card"><b>Bus 02 menuju titik jemput</b>06:32</div>
+                <div class="phone-card"><b>Bus 01 terlambat ±10 menit</b>06:50</div>
+                <div class="phone-card"><b>Selamat sampai di sekolah</b>07:05</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-row reverse">
+          <div>
+            <span class="detail-num">Fitur 04</span>
+            <h2>Pilih sendiri titik jemput terdekat</h2>
+            <p>Siswa memilih titik jemput dari daftar yang tersedia di sekitar rumah. Sistem otomatis mencocokkan dengan bus yang melewati titik tersebut, lengkap dengan estimasi jam pertemuan.</p>
+            <ul>
+              <li><span class="pin"></span> Daftar titik jemput berdasarkan lokasi</li>
+              <li><span class="pin"></span> Pencocokan otomatis ke rute bus terkait</li>
+              <li><span class="pin"></span> Estimasi jam pertemuan ditampilkan jelas</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Titik Jemput</div>
+              <div class="phone-body">
+                <div class="phone-row"><span class="pin"></span> Terminal</div>
+                <div class="phone-row"><span class="pin"></span> Pasar</div>
+                <div class="phone-row" style="background:var(--sky-deep);border-radius:8px;"><span class="pin"></span> Perumahan A</div>
+                <div class="phone-row"><span class="pin"></span> Perumahan B</div>
+                <div class="phone-card mt-16"><b>Perumahan A · Bus 02</b>Pertemuan 06:45</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADMIN PANEL -->
+      <div data-role-panel="admin" style="display:none;">
+        <div class="detail-row">
+          <div>
+            <span class="detail-num">Fitur 01</span>
+            <h2>Kelola armada dari satu dashboard</h2>
+            <p>Data bus, jumlah unit, dan jumlah siswa yang terdaftar tampil dalam satu ringkasan. Tidak ada lagi catatan armada yang tersebar di banyak file.</p>
+            <ul>
+              <li><span class="pin"></span> Ringkasan jumlah bus dan siswa aktif</li>
+              <li><span class="pin"></span> Data setiap bus dan sopir tersimpan rapi</li>
+              <li><span class="pin"></span> Riwayat perubahan tercatat otomatis</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Detail Rute Bus 02</div>
+              <div class="phone-body">
+                <div style="display:flex;gap:8px;margin-bottom:10px;">
+                  <div class="phone-card" style="flex:1;margin-bottom:0;"><b>5</b>Jumlah Bus</div>
+                  <div class="phone-card" style="flex:1;margin-bottom:0;"><b>120</b>Jumlah Siswa</div>
+                </div>
+                <div class="phone-row"><span class="pin"></span> Kelola Bus</div>
+                <div class="phone-row"><span class="pin"></span> Kelola Jadwal</div>
+                <div class="phone-row"><span class="pin"></span> Kelola Rute</div>
+                <div class="phone-row"><span class="pin"></span> Kelola Titik Jemput</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-row reverse">
+          <div>
+            <span class="detail-num">Fitur 02</span>
+            <h2>Atur rute dan titik jemput tanpa perlu tim IT</h2>
+            <p>Tambah, ubah, atau nonaktifkan titik pemberhentian langsung dari dashboard. Perubahan tersebut otomatis tampil di aplikasi orang tua dan siswa tanpa perlu update manual.</p>
+            <ul>
+              <li><span class="pin"></span> Susun urutan titik pemberhentian dengan drag</li>
+              <li><span class="pin"></span> Tetapkan bus dan sopir per rute</li>
+              <li><span class="pin"></span> Perubahan langsung tersinkron ke pengguna</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Kelola Rute</div>
+              <div class="phone-body">
+                <div class="phone-row"><span class="pin"></span> Rute Bus 01 · 4 titik</div>
+                <div class="phone-row"><span class="pin"></span> Rute Bus 02 · 5 titik</div>
+                <div class="phone-row"><span class="pin"></span> Rute Bus 03 · 3 titik</div>
+                <div class="phone-card mt-16"><b>+ Tambah titik jemput</b>Perumahan C</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <div>
+            <span class="detail-num">Fitur 03</span>
+            <h2>Kirim pengumuman ke satu rute atau seluruh sekolah</h2>
+            <p>Perubahan jadwal, bus pengganti, atau info penting lain bisa dikirim ke orang tua dalam satu rute tertentu, atau ke seluruh pengguna sekaligus.</p>
+            <ul>
+              <li><span class="pin"></span> Pilih target: satu rute atau semua pengguna</li>
+              <li><span class="pin"></span> Terkirim sebagai notifikasi di aplikasi</li>
+              <li><span class="pin"></span> Riwayat pengumuman tersimpan</li>
+            </ul>
+          </div>
+          <div class="phone" style="margin:0 auto;">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Pengumuman</div>
+              <div class="phone-body">
+                <div class="phone-card"><b>Jadwal berubah untuk hari Senin</b>Rute Bus 01</div>
+                <div class="phone-card mt-16"><b>+ Buat pengumuman baru</b>Pilih target rute</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Ingin lihat semua fitur langsung di ponsel kamu?</h2>
+          <p>Download SchoolRide dan coba sendiri alurnya sebagai orang tua atau siswa.</p>
+        </div>
+        <a href="kontak.html" class="btn btn-yellow">Download Sekarang</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></span>School<span>Ride</span></a>
+        <p>Aplikasi transportasi sekolah yang menghubungkan siswa, orang tua, dan sekolah dalam satu rute yang sama.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produk</h4>
+        <ul><li><a href="fitur.html">Fitur</a></li><li><a href="cara-kerja.html">Cara Kerja</a></li><li><a href="tampilan.html">Tampilan Aplikasi</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul><li><a href="tentang.html">Tentang Kami</a></li><li><a href="kontak.html">Kontak</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul><li><a href="mailto:halo@schoolride.id">halo@schoolride.id</a></li><li><a href="tel:+622112345678">(021) 1234-5678</a></li><li><span>Surabaya, Jawa Timur</span></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SchoolRide. Contoh desain untuk keperluan portofolio.</span>
+      <span>Teman perjalanan setiap hari</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

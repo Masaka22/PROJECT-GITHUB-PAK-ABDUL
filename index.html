@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SchoolRide — Perjalanan Sekolah Jadi Lebih Mudah</title>
+<meta name="description" content="SchoolRide menghubungkan siswa, orang tua, dan sekolah dalam satu aplikasi antar-jemput: rute langsung, jadwal jelas, dan notifikasi setiap tahap perjalanan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><path d="M4 11h16"/></svg>
+      </span>
+      School<span>Ride</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="fitur.html">Fitur</a></li>
+      <li><a href="cara-kerja.html">Cara Kerja</a></li>
+      <li><a href="tampilan.html">Tampilan Aplikasi</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="kontak.html" class="btn btn-ghost" style="display:none">Masuk</a>
+      <a href="kontak.html" class="btn btn-primary">Download App</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow-route"><span class="dot"></span>Dipakai 40+ sekolah di Indonesia</span>
+        <h1>Antar-jemput sekolah, <span class="accent">tanpa</span> pesan “sudah nyampe mana, Bu?”</h1>
+        <p class="hero-sub">SchoolRide menyatukan rute bus, jadwal keberangkatan, dan notifikasi real-time dalam satu aplikasi — jadi orang tua tahu posisi anaknya, siswa naik di titik yang benar, dan sekolah tidak perlu telepon satu-satu.</p>
+        <div class="hero-actions">
+          <a href="kontak.html" class="btn btn-primary">Coba Gratis untuk Sekolah</a>
+          <a href="cara-kerja.html" class="btn btn-outline">Lihat Cara Kerjanya</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>120+</b><span>siswa per rute rata-rata</span></div>
+          <div class="stat"><b>06:32</b><span>notifikasi bus mendekat</span></div>
+          <div class="stat"><b>98%</b><span>ketepatan jadwal jemput</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg class="hero-route-svg" viewBox="0 0 440 420" fill="none">
+          <path d="M40,210 C 40,90 140,40 220,40 S 400,90 400,210 S 300,380 220,380 S 40,330 40,210" stroke="#DCE7FF" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+          <g>
+            <circle cx="40" cy="210" r="9" fill="#fff" stroke="#1B4DE4" stroke-width="3"/>
+            <text x="58" y="215" font-family="Inter" font-size="13" fill="#0B1E4A" font-weight="600">Rumah</text>
+          </g>
+          <g>
+            <circle cx="220" cy="40" r="9" fill="#fff" stroke="#1B4DE4" stroke-width="3"/>
+            <text x="177" y="26" font-family="Inter" font-size="13" fill="#0B1E4A" font-weight="600">Terminal</text>
+          </g>
+          <g>
+            <circle cx="400" cy="210" r="9" fill="#fff" stroke="#1B4DE4" stroke-width="3"/>
+            <text x="330" y="196" font-family="Inter" font-size="13" fill="#0B1E4A" font-weight="600">Perumahan</text>
+          </g>
+          <g>
+            <circle cx="220" cy="380" r="10" fill="#FFC93C" stroke="#F5A623" stroke-width="3"/>
+            <text x="180" y="405" font-family="Inter" font-size="13" fill="#0B1E4A" font-weight="700">Sekolah</text>
+          </g>
+        </svg>
+        <div class="bus-token">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B1E4A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS / trust strip -->
+  <section class="section-tight">
+    <div class="wrap">
+      <p class="center" style="font-size:0.85rem;font-weight:600;color:var(--slate-light);letter-spacing:0.02em;">Dipercaya oleh yayasan dan sekolah swasta di berbagai kota</p>
+      <div style="display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-top:26px;opacity:0.7;">
+        <span style="font-family:var(--font-head);font-weight:700;color:var(--slate-light);">SD Cendekia</span>
+        <span style="font-family:var(--font-head);font-weight:700;color:var(--slate-light);">Yayasan Harapan</span>
+        <span style="font-family:var(--font-head);font-weight:700;color:var(--slate-light);">SMP Nusantara</span>
+        <span style="font-family:var(--font-head);font-weight:700;color:var(--slate-light);">SMA Wira Bangsa</span>
+        <span style="font-family:var(--font-head);font-weight:700;color:var(--slate-light);">TK Ceria</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-sky" id="fitur">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Yang bisa dilakukan SchoolRide</span>
+        <h2>Satu aplikasi untuk tiga pihak yang selama ini komunikasi lewat grup WhatsApp</h2>
+        <p>Orang tua memantau, siswa naik di titik yang tepat, sekolah mengatur semuanya dari satu dashboard.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card wide">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B4DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.5-7-11a7 7 0 1 1 14 0c0 4.5-7 11-7 11Z"/></svg>
+          </div>
+          <div>
+            <h3>Rute &amp; peta langsung</h3>
+            <p>Lihat posisi bus bergerak di peta, lengkap dengan daftar titik pemberhentian dari terminal sampai gerbang sekolah. Orang tua tidak perlu menebak sudah sejauh mana anaknya.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B4DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <h3>Jadwal per hari</h3>
+          <p>Waktu keberangkatan tiap bus untuk setiap hari sekolah, termasuk saat jadwal berubah mendadak.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B4DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3>Notifikasi tiap tahap</h3>
+          <p>Dari “bus berangkat”, “mendekati titik jemput”, sampai “sudah sampai sekolah” — otomatis masuk ke ponsel orang tua.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B4DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Titik jemput sendiri</h3>
+          <p>Siswa memilih titik jemput terdekat dari rumah, lalu SchoolRide mencocokkan dengan rute bus yang lewat.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B4DE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+          </div>
+          <h3>Kelola armada</h3>
+          <p>Admin sekolah mengatur bus, sopir, dan kapasitas per rute — semua dari dashboard, tanpa catatan manual.</p>
+        </div>
+      </div>
+      <div class="center mt-40">
+        <a href="fitur.html" class="btn btn-outline">Lihat semua fitur secara lengkap</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENS PREVIEW -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="kicker">Tampilan aplikasi</span>
+        <h2>Dirancang agar dipahami dalam sekali lihat — untuk siswa maupun orang tua</h2>
+      </div>
+
+      <div class="screens-strip" style="justify-content:center;">
+        <div class="screen-item">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Rute Bus 02</div>
+              <div class="phone-body">
+                <div class="phone-card"><b>Bus sedang berjalan</b>Berangkat 06:45 dari Terminal</div>
+                <div class="phone-row"><span class="pin"></span> Terminal</div>
+                <div class="phone-row"><span class="pin"></span> Pasar</div>
+                <div class="phone-row"><span class="pin"></span> Perumahan A</div>
+                <div class="phone-row"><span class="pin"></span> Sekolah</div>
+              </div>
+              <div class="phone-tabbar"><span class="active">Home</span><span>Rute</span><span>Jadwal</span><span>Profil</span></div>
+            </div>
+          </div>
+          <span class="tag"><span class="num">1</span>Rute &amp; peta</span>
+        </div>
+
+        <div class="screen-item">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Jadwal</div>
+              <div class="phone-body">
+                <span class="phone-pill">Senin</span>
+                <div class="phone-card mt-16"><b>06.00 · Bus 01</b>Tujuan Sekolah</div>
+                <div class="phone-card"><b>06.30 · Bus 02</b>Tujuan Sekolah</div>
+                <div class="phone-card"><b>15.00 · Bus 01</b>Tujuan Rumah</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span class="active">Jadwal</span><span>Profil</span></div>
+            </div>
+          </div>
+          <span class="tag"><span class="num">2</span>Jadwal harian</span>
+        </div>
+
+        <div class="screen-item">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-bar">Notifikasi</div>
+              <div class="phone-body">
+                <div class="phone-card"><b>Bus 02 menuju titik jemput</b>06:32</div>
+                <div class="phone-card"><b>Bus 01 terlambat ±10 menit</b>06:50</div>
+                <div class="phone-card"><b>Selamat! Sudah sampai sekolah</b>07:05</div>
+              </div>
+              <div class="phone-tabbar"><span>Home</span><span>Rute</span><span>Jadwal</span><span class="active">Profil</span></div>
+            </div>
+          </div>
+          <span class="tag"><span class="num">3</span>Notifikasi real-time</span>
+        </div>
+      </div>
+      <div class="center mt-24">
+        <a href="tampilan.html" class="btn btn-ghost">Lihat semua 9 tampilan aplikasi →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SUMMARY -->
+  <section class="section section-sky">
+    <div class="wrap grid-2">
+      <div>
+        <span class="kicker">Cara kerja</span>
+        <h2>Dari daftar sampai bel masuk, semua lewat empat langkah</h2>
+        <p class="mt-16" style="max-width:460px;">Tidak perlu training panjang — orang tua dan siswa biasanya sudah nyaman memakainya di hari pertama.</p>
+        <a href="cara-kerja.html" class="btn btn-primary mt-24">Lihat alur lengkap</a>
+      </div>
+      <div class="route-v">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body"><h3>Daftar &amp; hubungkan data siswa</h3><p>Sekolah mengundang orang tua; akun siswa otomatis tertaut ke kelas dan rute yang sesuai.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body"><h3>Pilih titik jemput</h3><p>Siswa memilih titik jemput terdekat, sistem mencocokkan ke bus yang melewati rute itu.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body"><h3>Pantau perjalanan</h3><p>Notifikasi otomatis dikirim setiap bus berangkat, mendekat, dan tiba di sekolah.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS / NAVY -->
+  <section class="section section-navy">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker" style="color:var(--yellow);">Kenapa sekolah beralih ke SchoolRide</span>
+        <h2>Berhenti mengurus antar-jemput lewat kertas dan grup chat yang ramai</h2>
+      </div>
+      <div class="stat-band">
+        <div class="stat"><b>40+</b><span>sekolah &amp; yayasan aktif</span></div>
+        <div class="stat"><b>15.000+</b><span>siswa terdaftar</span></div>
+        <div class="stat"><b>98%</b><span>ketepatan jadwal jemput</span></div>
+        <div class="stat"><b>4.8/5</b><span>rating dari orang tua</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="kicker">Kata mereka</span>
+        <h2>Dipakai setiap pagi oleh orang tua, siswa, dan admin sekolah</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"Sekarang saya tinggal cek aplikasi, bukan chat sopir satu-satu tiap pagi. Anak saya juga jadi tahu jam pasti harus di titik jemput."</p>
+          <div class="t-person"><div class="t-avatar"></div><div><b>Ibu Ratna</b><span>Orang tua siswa, SD Cendekia</span></div></div>
+        </div>
+        <div class="testimonial">
+          <p>"Dari sisi sekolah, kelola bus dan rute yang tadinya di buku catatan sekarang rapi di satu dashboard. Ganti jadwal mendadak juga langsung sampai ke orang tua."</p>
+          <div class="t-person"><div class="t-avatar"></div><div><b>Pak Yusuf</b><span>Admin transportasi, Yayasan Harapan</span></div></div>
+        </div>
+        <div class="testimonial">
+          <p>"Notifikasi bus mendekat itu paling kepakai — saya bisa keluar rumah pas waktunya, tidak menunggu lama di titik jemput."</p>
+          <div class="t-person"><div class="t-avatar"></div><div><b>Dell</b><span>Siswa Kelas XI RPL 1</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Naik sekolah jadi lebih mudah bersama SchoolRide</h2>
+          <p>Gratis dicoba untuk sekolah, tanpa perlu ganti sistem administrasi yang sudah ada.</p>
+        </div>
+        <div class="store-badges">
+          <span class="store-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 4l16 8-16 8V4z"/></svg><span>Get it on<b>Google Play</b></span></span>
+          <span class="store-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M16.5 2c.1 1.1-.4 2.2-1.1 3-.7.8-1.9 1.4-2.9 1.3-.1-1 .5-2.2 1.1-2.9C14.3 2.6 15.4 2 16.5 2zM20.6 17.3c-.5 1.1-.8 1.6-1.5 2.6-1 1.4-2.4 3.1-4.1 3.1-1.5 0-1.9-1-4-1-2 0-2.5 1-4 1-1.7 0-3-1.6-4-3-2.7-3.9-3-8.5-1.3-11 1.2-1.8 3-2.8 4.7-2.8 1.7 0 2.8 1 4.2 1 1.4 0 2.2-1 4.2-1 1.5 0 3.1.8 4.3 2.3-3.8 2.1-3.2 7.5 1.5 8.8z"/></svg><span>Download on the<b>App Store</b></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></span>School<span>Ride</span></a>
+        <p>Aplikasi transportasi sekolah yang menghubungkan siswa, orang tua, dan sekolah dalam satu rute yang sama.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="fitur.html">Fitur</a></li>
+          <li><a href="cara-kerja.html">Cara Kerja</a></li>
+          <li><a href="tampilan.html">Tampilan Aplikasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="mailto:halo@schoolride.id">halo@schoolride.id</a></li>
+          <li><a href="tel:+622112345678">(021) 1234-5678</a></li>
+          <li><span>Surabaya, Jawa Timur</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SchoolRide. Contoh desain untuk keperluan portofolio.</span>
+      <span>Teman perjalanan setiap hari</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
